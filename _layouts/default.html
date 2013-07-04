@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="David Yamnitsky's Personal Website">
+		<meta name="author" content="David Yamnitsky">
+
+		<link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="/static/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+		<link href="/static/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+		<link href="/static/css/styles.css" rel="stylesheet">
+
+	</head>
+
+	<body>
+
+    <div id="navbar" class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</a>
+			<a class="brand" href="/">David Yamnitsky</a>
+				<div class="nav-collapse">
+				<ul class="nav">
+					<li><a href="/"><i class="icon-home"></i> home</a></li>
+					<li><a href="/projects/"><i class="icon-folder-open"></i> projects</a></li>
+					<li><a href="/resume/"><i class="icon-book"></i> resume</a></li>
+					<li><a href="/contact/"><i class="icon-envelope"></i> contact</a></li>
+				</ul>
+				<ul class="nav navbar-visible-small">
+					<li><a href="/search/"><i class="icon-search"></i> search</a></li>
+				</ul>
+				<ul class="nav navbar-visible-big pull-right">
+					<li>
+						<a target="_blank" class="socialicon" href="http://github.com/nitsky">
+						<i class="icon-github"></i>
+						</a>
+					</li>
+					<li>
+						<a target="_blank" class="socialicon" style="margin-left:-6px;margin-right:-4px;" href="http://www.linkedin.com/in/davidyamnitsky">
+						<i class="icon-linkedin"></i>
+						</a>
+					</li>
+					<li>
+						<a target="_blank" class="socialicon" style="font-size:25px;padding-top:8px;" href="http://twitter.com/davidyamnitsky">
+						<i class="icon-twitter"></i>
+						</a>
+					</li>
+					<li>
+						<a target="_blank" class="socialicon" style="margin-left:-4px;" href="http://www.facebook.com/nitsky">
+						<i class="icon-facebook-sign"></i>
+						</a>
+					</li>
+				</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <div class="container">
+
+		{{ content }}
+
+	</div>
+
+	</body>
+
+</html>
