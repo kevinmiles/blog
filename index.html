@@ -3,66 +3,64 @@ layout: default
 title: David Yamnitsky's Blog
 ---
 
+<div class="row">
+    <div class="span12">
+        <h1>David Yamnitsky</h1>
+        <ul class="bar">
+            <li><a href="/"><i class="icon-large icon-home"></i> home</a></li>
+            <li><a href="https://github.com/nitsky"><i class="icon-large icon-github"></i> github</a></li>
+            <li><a href="https://linkedin.com/in/davidyamnitsky"><i class="icon-large icon-linkedin"></i> linkedin</a></li>
+        </ul>
+    </div>
+</div>
+
 {% for post in paginator.posts %}
-  <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-  <p class="author">
-    <span class="date">{{ post.date }}</span>
-  </p>
-  <div class="content">
-    {{ post.content }}
-  </div>
-  <hr>
+
+<div class="row">
+    <div class="span12">
+        
+        <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+        
+        <h4>{{ post.date | date: "%B %d, %Y" }}</h4>
+        
+        <div class="content">
+            {{ post.content }}
+        </div>
+        
+        <hr>
+        
+    </div>
+</div>
+
 {% endfor %}
 
-<div class="pagination pagination-centered pagination-visible-large">
+<div class="pagination pagination-centered">
     <ul>
         {% if paginator.previous_page %}
-            <li>
-                <a href="{% page_url page.previous_page_number %}">&larr;</a>
-            </li>
+            {% if paginator.previous_page == 1 %}
+                <li><a href="/">Back</a></li>
+            {% else %}
+                <li><a href="/page{{paginator.previous_page}}">Back</a></li>
+            {% endif %}
         {% endif %}
-        {% if show_first %}
-            <li>
-                <a href="{% page_url 1 %}">1</a>
-            </li>
-            <li class="ellipsis">
-                <a>...</a>
-            </li>
+ 
+        {% if paginator.page == 1 %}
+            <li class="disabled"><a href="#">1</a></li>
+        {% else %}
+            <li><a href="/">1</a></li>
         {% endif %}
-        {% for i in paginator.total_pages %}
-            <li {% if paginator.page == i %}class="disabled"{% endif %}>
-                <a href="{% page_url i %}">{{ i }}</a>
-            </li>
+ 
+        {% for count in (2..paginator.total_pages) %}
+            <li class="page">
+        {% if count == paginator.page %}
+            <li class="active"><a href="#">{{count}}</a></li>
+        {% else %}
+            <li><a href="/page{{count}}">{{count}}</a></li>
+        {% endif %}
         {% endfor %}
-        {% if show_last %}
-            <li class="ellipsis">
-                <a>...</a>
-            </li>
-            <li>
-                <a href="{% page_url page.paginator.num_pages %}">{{ page.paginator.num_pages }}</a>
-            </li>
-        {% endif %}
-        {% if page.has_next %}
-            <li>
-                <a href="{% page_url page.next_page_number %}">&rarr;</a>
-            </li>
-        {% endif %}
-    </ul>
-</div>
-<div class="pagination pagination-centered pagination-visible-small">
-    <ul>
-        {% if page.has_previous %}
-            <li>
-                <a href="{% page_url page.previous_page_number %}">&larr;</a>
-            </li>
-        {% endif %}
-        <li class="ellipsis">
-            <a>Page {{ page.number }} of {{ page.paginator.num_pages }}</a>
-        </li>
-        {% if page.has_next %}
-            <li>
-                <a href="{% page_url page.next_page_number %}">&rarr;</a>
-            </li>
+ 
+        {% if paginator.next_page %}
+            <li class=""><a href="/page{{paginator.next_page}}">Next</a></li>
         {% endif %}
     </ul>
 </div>
