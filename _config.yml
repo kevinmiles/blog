@@ -1,3 +1,4 @@
 name: David Yamnitsky's Blog
 pygments: true
 paginate: 5
+permalink: pretty
