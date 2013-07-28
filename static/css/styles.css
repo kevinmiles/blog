@@ -2,26 +2,53 @@ h1, h2, h3, h4, h5, h6, p {
     font-weight:200;
 }
 
+.title {
+    float:left;
+    margin-right: 20px;
+    font-size:20px;
+    font-weight:200;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
 .bar {
-    list-style-type: none;
+    font-size:16px;
+    float:left;
+    list-style: none;
     margin: 0;
+    margin-top:10px;
+    margin-bottom:10px;
 }
 
 .bar > li {
-    float: left;
-    line-height: 40px;
-    margin-bottom: 5px;
+    display:inline;
     margin-right: 20px;
-};
-
-a {text-decoration: none}
-a:visited {text-decoration: none}
-a:active {text-decoration: none}
-
-.pagination > ul {
-    box-shadow: none;
 }
 
-img {
+@media (max-width: 558px) {
+
+    .title {
+        display:block;
+        float:none;
+    }
+
+    .bar {
+        display:block;
+        float:none;
+    }
+
+    .bar > li {
+        display:block;
+        margin-top: 5px;
+        margin-left:10px;
+    }
+
+}
+
+hr {
     margin: 0;
+}
+
+#paginator > ul {
+    box-shadow: none;
 }

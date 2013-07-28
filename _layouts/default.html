@@ -7,9 +7,9 @@
 		<meta name="description" content="David Yamnitsky">
 		<meta name="author" content="David Yamnitsky">
         
-		<link href="/static/bootstrap/css/bootstrap.css" rel="stylesheet">
-		<link href="/static/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
-		<link href="/static/font-awesome/css/font-awesome.css" rel="stylesheet">
+		<link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="/static/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+		<link href="/static/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 		<link href="/static/css/syntax.css" rel="stylesheet">
 		<link href="/static/css/styles.css" rel="stylesheet">
         
@@ -25,7 +25,19 @@
 	<body>
     
     <div class="container">
-
+        
+        <div class="row">
+            <div class="span12">
+            <span class="title">David Yamnitsky</span>
+            <ul class="bar">
+                <li><a href="/" style="text-decoration:none"><i class="icon-large icon-home"></i>&nbsp;home</a></li>
+                <li><a href="https://github.com/nitsky" style="text-decoration:none"><i class="icon-large icon-github"></i>&nbsp;github</a></li>
+                <li><a href="https://linkedin.com/in/davidyamnitsky" style="text-decoration:none"><i class="icon-large icon-linkedin-sign"></i>&nbsp;linkedin</a></li>
+            </ul>
+            </div>
+        </div>
+        <hr>
+        
 		{{ content }}
 
 	</div>
