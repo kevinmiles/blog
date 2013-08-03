@@ -2,7 +2,7 @@
 layout: post
 title: "Graph Algorithms Part 1"
 slug: graph-algorithms-part-1
-date: 2013-07-28 10:10:17
+date: 2013-07-28
 categories: blog
 tags: algorithms
 ---
@@ -44,6 +44,9 @@ Here are a few ways you can query this graph.
 The most basic graph algorithms are Breadth-First and Depth-First Search (BFS and DFS), two ways to explore a graph from a given node. The procedure for both is simple:
 
 1. Keep a list of nodes to explore, initially just the starting node
-2. While the list is not empty, visit the next node in the list, and add its neighbors to the list.
+2. While the list is not empty, remove and process the next node in the list
+3. Add the node's neighbors to the list, and continue
+
+Breadth-First and Depth-First search differ only in the rule they employ to choose which node in the list to process next. Depth-First keeps its list of nodes in a queue.
 
 

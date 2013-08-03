@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Automatically Tidy Code"
+title: "Automatically Clean Code"
 slug: automatically-clean-code
-date: 2013-07-28 11:08:48
+date: 2013-07-28
 categories: blog
 tags:
 ---

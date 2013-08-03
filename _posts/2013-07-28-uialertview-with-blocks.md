@@ -2,7 +2,7 @@
 layout: post 
 title: "UIAlertView with Blocks"
 slug: uialertview-with-blocks 
-date: 2013-07-28 09:26:24
+date: 2013-07-28
 categories: blog
 tags:
 ---
