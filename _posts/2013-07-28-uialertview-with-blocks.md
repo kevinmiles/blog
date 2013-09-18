@@ -3,13 +3,13 @@ layout: post
 title: "UIAlertView with Blocks"
 slug: uialertview-with-blocks 
 date: 2013-07-28
-categories: blog
+category: blog
 tags:
 ---
 
 UIAlertView predates the introduction of Objective-C blocks so it implements callbacks using delegation. This works reasonably well for a single alert view in a view controller, but what happens when you have multiple? How do you distinguish between the different alert views? The common solution is to use tags, and the have a conditional in the delegate method.
 
-{% highlight objc %}
+{% highlight objc linenos %}
 UIAlertView *continueAlertView = [[UIAlerView alloc] initWithTitle:@"Continue?"
                                                           message:nil
                                                          delegate:self
@@ -27,7 +27,7 @@ errorAlertView.tag = 1;
 [errorAlertView show];
 {% endhighlight %}
 
-{% highlight objc %}
+{% highlight objc linenos %}
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
     // handle continue alert view
@@ -45,7 +45,7 @@ errorAlertView.tag = 1;
 
 Clearly this doesn't scale nicely, and code gets muddled together. It is also a headache to make variables defined where the alert is created accessible to the delegate call. To fix this, I created a simple category of UIAlertView that uses an internal wrapper class to mask the delegate and use a callback block. Here's what the same code looks like now:
 
-{% highlight objc %}
+{% highlight objc linenos %}
 [UIAlertView showWithTitle:@"Continue?" 
                    message:nil
          cancelButtonTitle:@"Cancel"

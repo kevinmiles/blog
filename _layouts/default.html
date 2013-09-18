@@ -6,47 +6,63 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="David Yamnitsky's Blog">
 		<meta name="author" content="David Yamnitsky">
-        	
+
 		<title>David Yamnitsky's Blog</title>
 
-		<link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-		<link href="/static/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
-		<link href="/static/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+		<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 		<link href="/static/css/syntax.css" rel="stylesheet">
 		<link href="/static/css/styles.css" rel="stylesheet">
-        
+
         <!-- start Mixpanel -->
             <script type="text/javascript">
             (function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
             mixpanel.init("021c7a9110cc016be755fd84df0cf006");
             </script>
         <!-- end Mixpanel -->
-        
+
 	</head>
 
 	<body>
     
+    
+    
     <div class="container">
         
         <div class="row">
-            <div class="span12">
-            <span class="title">David Yamnitsky</span>
-            <ul class="bar">
-                <li><a href="/" style="text-decoration:none"><i class="icon-large icon-home"></i>&nbsp;home</a></li>
-                <li><a href="https://github.com/nitsky" style="text-decoration:none"><i class="icon-large icon-github"></i>&nbsp;github</a></li>
-                <li><a href="https://linkedin.com/in/davidyamnitsky" style="text-decoration:none"><i class="icon-large icon-linkedin-sign"></i>&nbsp;linkedin</a></li>
-            </ul>
-            </div>
+        <div class="span12">
+			
+			<nav class="navbar navbar-default" role="navigation">
+			  <div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+				  <span class="sr-only">Toggle navigation</span>
+				  <span class="icon-bar"></span>
+				  <span class="icon-bar"></span>
+				  <span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">David Yamnitsky</a>
+			  </div>
+
+			  <div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav">
+				  <li><a href="/"><i class="icon-large icon-home"></i>&nbsp;home</a></li>
+				  <li><a href="/projects"><i class="icon-large icon-folder-open"></i>&nbsp;projects</a></li>
+				  <li><a href="https://github.com/nitsky"><i class="icon-large icon-github"></i>&nbsp;github</a></li>
+				  <li><a href="https://linkedin.com/in/davidyamnitsky"><i class="icon-large icon-linkedin-sign"></i>&nbsp;linkedin</a></li>
+				</ul>
+			  </div>
+			</nav>
+			<hr>
+        	
         </div>
-        <hr>
+        </div>
         
 		{{ content }}
 
 	</div>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="/static/js/jquery-1.7.2.min.js"><\/script>')</script>
-	<script src="/static/bootstrap/js/bootstrap.min.js"></script>
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 	<script src="/static/js/scripts.js"></script>
 
 	</body>

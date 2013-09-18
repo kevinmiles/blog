@@ -1,54 +1,45 @@
 h1, h2, h3, h4, h5, h6, p {
     font-weight:200;
-}
-
-.title {
-    float:left;
-    margin-right: 20px;
-    font-size:20px;
-    font-weight:200;
     margin-top:10px;
-    margin-bottom:10px;
-}
-
-.bar {
-    font-size:16px;
-    float:left;
-    list-style: none;
-    margin: 0;
-    margin-top:10px;
-    margin-bottom:10px;
-}
-
-.bar > li {
-    display:inline;
-    margin-right: 20px;
-}
-
-@media (max-width: 558px) {
-
-    .title {
-        display:block;
-        float:none;
-    }
-
-    .bar {
-        display:block;
-        float:none;
-    }
-
-    .bar > li {
-        display:block;
-        margin-top: 5px;
-        margin-left:10px;
-    }
-
 }
 
 hr {
-    margin: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
-#paginator > ul {
-    box-shadow: none;
+.navbar {
+	margin-bottom:0px;
+	background-color:white;
+	border:none;
+	margin-left:-15px;
+	margin-right:-15px;
+}
+
+@media (max-width:768px) {
+	.row {
+		margin-left:-5px;
+		margin-right:-5px;
+	}
+}
+
+img {
+	max-width:100%;
+}
+
+.page {
+	margin-bottom:0px;
+}
+
+div.gist div.gist-file div.gist-data {
+	background-color:white;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color:#428bca;
+}
+
+.navbar-brand {
+	font-weight:200;
+	font-color:black;
 }

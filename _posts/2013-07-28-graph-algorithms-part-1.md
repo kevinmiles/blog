@@ -3,7 +3,7 @@ layout: post
 title: "Graph Algorithms Part 1"
 slug: graph-algorithms-part-1
 date: 2013-07-28
-categories: blog
+category: blog
 tags: algorithms
 ---
 
@@ -21,7 +21,7 @@ The nodes in this graph are the cities, the edges are the train routes, and the 
 
 The easiest way to represent a graph in python is with a dictionary. The keys are node names, and the values are a dictionary of edges, where the keys are the destination nodes and the values are the edge weights. Here is the graph from above in python:
 
-{% highlight python %}
+{% highlight python linenos %}
 graph = {
     "boston": { "nyc": 214, },
     "nyc": { "boston": 214, "sf": 2905, "miami": 1276 },

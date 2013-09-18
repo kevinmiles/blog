@@ -8,46 +8,39 @@ title: David Yamnitsky's Blog
 <div class="row">
     <div class="span12">
         
-        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-        
-        <h4>{{ post.date | date: "%B %d, %Y" }}</h4>
-        
-        {{ post.content }}
-        
-        <hr>
+	<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+	
+	<h4>{{ post.date | date: "%B %d, %Y" }}</h4>
+	
+	{% if post.content contains "<!-- more -->" %}
+		{{ post.content | split:"<!-- more -->" | first % }}
+		<h4><a href="{{ post.url }}">Read more...</a></h4>
+	{% else %}
+		{{ post.content }}
+	{% endif %}
+	
+	<hr>
         
     </div>
 </div>
 
 {% endfor %}
 
-<div id="paginator" class="pagination pagination-centered">
-    <ul>
-        {% if paginator.previous_page %}
-            {% if paginator.previous_page == 1 %}
-                <li><a href="/">Back</a></li>
-            {% else %}
-                <li><a href="/page{{paginator.previous_page}}">Back</a></li>
-            {% endif %}
-        {% endif %}
- 
-        {% if paginator.page == 1 %}
-            <li class="disabled"><a href="#">1</a></li>
-        {% else %}
-            <li><a href="/">1</a></li>
-        {% endif %}
- 
-        {% for count in (2..paginator.total_pages) %}
-            <li class="page">
-        {% if count == paginator.page %}
-            <li class="active"><a href="#">{{count}}</a></li>
-        {% else %}
-            <li><a href="/page{{count}}">{{count}}</a></li>
-        {% endif %}
-        {% endfor %}
- 
-        {% if paginator.next_page %}
-            <li class=""><a href="/page{{paginator.next_page}}">Next</a></li>
-        {% endif %}
-    </ul>
+<div class="row">
+	<div class="span12">
+	
+	<ul class="pager">
+		{% if paginator.previous_page %}
+			{% if paginator.previous_page == 1 %}
+				<li class="previous"><a href="/">&larr; Back</a></li>
+			{% else %}
+				<li class="previous"><a href="/page{{ paginator.previous_page }}">&larr; Back</a></li>
+			{% endif %}
+		{% endif %}
+		{% if paginator.next_page %}
+			<li class="next"><a href="/page{{ paginator.next_page }}">Next &rarr;</a></li>
+		{% endif %}
+	</ul>
+	
+	</div>
 </div>
