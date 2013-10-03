@@ -6,14 +6,14 @@ title: David Yamnitsky's Blog
 {% for post in paginator.posts %}
 
 <div class="row">
-    <div class="span12">
+    <div class="col-md-12">
         
 	<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
 	
 	<h4>{{ post.date | date: "%B %d, %Y" }}</h4>
 	
 	{% if post.content contains "<!-- more -->" %}
-		{{ post.content | split:"<!-- more -->" | first % }}
+		{{ post.excerpt }}
 		<h4><a href="{{ post.url }}">Read more...</a></h4>
 	{% else %}
 		{{ post.content }}
@@ -27,8 +27,8 @@ title: David Yamnitsky's Blog
 {% endfor %}
 
 <div class="row">
-	<div class="span12">
-	
+	<div class="col-md-12">
+
 	<ul class="pager">
 		{% if paginator.previous_page %}
 			{% if paginator.previous_page == 1 %}

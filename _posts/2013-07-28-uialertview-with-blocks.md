@@ -9,6 +9,8 @@ tags:
 
 UIAlertView predates the introduction of Objective-C blocks so it implements callbacks using delegation. This works reasonably well for a single alert view in a view controller, but what happens when you have multiple? How do you distinguish between the different alert views? The common solution is to use tags, and the have a conditional in the delegate method.
 
+<!-- more -->
+
 {% highlight objc linenos %}
 UIAlertView *continueAlertView = [[UIAlerView alloc] initWithTitle:@"Continue?"
                                                           message:nil

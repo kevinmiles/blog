@@ -2,17 +2,74 @@
 <html lang="en">
 
 	<head>
+		
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="David Yamnitsky's Blog">
 		<meta name="author" content="David Yamnitsky">
 
-		<title>David Yamnitsky's Blog</title>
+		<title>{{ page.title }}</title>
 
-		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
-		<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-		<link href="/static/css/syntax.css" rel="stylesheet">
-		<link href="/static/css/styles.css" rel="stylesheet">
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
+		
+		<style>
+
+h1, h2, h3, h4, h5, h6, p {
+    font-weight:200;
+    margin-top:0px;
+}
+
+hr {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.navbar {
+	margin-bottom:0px;
+	background-color:white;
+	border:none;
+}
+
+.navbar-default .navbar-nav > li > a {
+	color:#428bca;
+}
+
+.navbar-brand {
+	font-weight:200;
+	font-color:black;
+}
+
+@media (max-width:768px) {
+	.row {
+		margin-left:-20px;
+		margin-right:-20px;
+	}
+}
+
+img {
+	max-width:100%;
+}
+
+.carousel-inner img {
+	width:100%;
+	height:100%;
+}
+
+div.gist div.gist-file div.gist-data {
+	background-color:white;
+}
+
+.sidenav {
+    margin-top: 0px;
+    margin-left:0px;
+    padding-left:0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-color: #ffffff;
+}
+
+		</style>
 
         <!-- start Mixpanel -->
             <script type="text/javascript">
@@ -24,8 +81,6 @@
 	</head>
 
 	<body>
-    
-    
     
     <div class="container">
         
@@ -40,30 +95,34 @@
 				  <span class="icon-bar"></span>
 				  <span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#">David Yamnitsky</a>
+				<a class="navbar-brand" href="{{ site.url }}">David Yamnitsky</a>
 			  </div>
 
 			  <div class="collapse navbar-collapse navbar-ex1-collapse">
 				<ul class="nav navbar-nav">
-				  <li><a href="/"><i class="icon-large icon-home"></i>&nbsp;home</a></li>
-				  <li><a href="/projects"><i class="icon-large icon-folder-open"></i>&nbsp;projects</a></li>
+				  <li><a href="{{ site.url }}"><i class="icon-large icon-home"></i>&nbsp;home</a></li>
+				  <li><a href="{{ site.url }}/projects"><i class="icon-large icon-folder-open"></i>&nbsp;projects</a></li>
 				  <li><a href="https://github.com/nitsky"><i class="icon-large icon-github"></i>&nbsp;github</a></li>
 				  <li><a href="https://linkedin.com/in/davidyamnitsky"><i class="icon-large icon-linkedin-sign"></i>&nbsp;linkedin</a></li>
 				</ul>
 			  </div>
 			</nav>
-			<hr>
         	
         </div>
         </div>
         
+        <div class="row">
+	        <div class="col-md-12">
+	        	<hr>
+	        </div>
+        </div>
+
 		{{ content }}
 
 	</div>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-	<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-	<script src="/static/js/scripts.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 
 	</body>
     

@@ -7,4 +7,6 @@ category: blog
 tags:
 ---
 
+<!-- more -->
+
 {% gist 6146728 %}

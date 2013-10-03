@@ -9,11 +9,13 @@ tags: algorithms
 
 This post is the first in a series covering a simple, code-first explanation of graph algorithms that I wish were available when I was taking MIT's introductory algorithms class, 6.006. The class is taught from more of a mathematical and theoretical perspective than I was comfortable with, and I would have benefited from actually seeing the code first, rather than a bunch of symbols, because I realized later that the algorithms are actually much easier to understand than the math made it seem. I'll be using python because it makes everything easy to understand.
 
+<!-- more -->
+
 #### What is a graph?
 
 First, what is a graph? A series of points, called nodes, connected by lines, called edges. The edges may or may not have weights, which are values associated with the edge. I'll use as an example a graph which represents train routes between cities.
 
-![graph of train routes]({{ site.url }}/static/assets/graph-algorithms/graph.png)
+![graph of train routes](/static/assets/graph-algorithms/graph.png)
 
 The nodes in this graph are the cities, the edges are the train routes, and the edge weights are the distances (in miles) of those routes.
 
