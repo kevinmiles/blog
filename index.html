@@ -7,20 +7,20 @@ title: David Yamnitsky's Blog
 
 <div class="row">
     <div class="col-md-12">
-        
+
 	<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-	
+
 	<h4>{{ post.date | date: "%B %d, %Y" }}</h4>
-	
+
 	{% if post.content contains "<!-- more -->" %}
 		{{ post.excerpt }}
 		<h4><a href="{{ post.url }}">Read more...</a></h4>
 	{% else %}
 		{{ post.content }}
 	{% endif %}
-	
+
 	<hr>
-        
+
     </div>
 </div>
 
@@ -41,6 +41,6 @@ title: David Yamnitsky's Blog
 			<li class="next"><a href="/page{{ paginator.next_page }}">Next &rarr;</a></li>
 		{% endif %}
 	</ul>
-	
+
 	</div>
 </div>
