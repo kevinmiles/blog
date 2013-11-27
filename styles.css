@@ -5,11 +5,12 @@ body {
 p {
     font-size: 20px;
     line-height: 1.4;
+    margin-bottom:0px;
 }
 
 h1, h2, h3, h4, h5, h6, p {
-    font-weight:200;
-    margin-top:0px;
+    font-weight: 200;
+    margin-top: 0px;
 }
 
 hr {
@@ -18,18 +19,18 @@ hr {
 }
 
 .navbar {
-    margin-bottom:0px;
-    background-color:white;
-    border:none;
+    margin-bottom: 0px;
+    background-color: white;
+    border: none;
 }
 
 .navbar-default .navbar-nav > li > a {
-    color:#428bca;
+    color: #428bca;
 }
 
 .navbar-brand {
-    font-weight:200;
-    font-color:black;
+    font-weight: 200;
+    font-color: black;
 }
 
 .navbar-accent {
@@ -40,13 +41,13 @@ hr {
 
 @media (max-width:768px) {
     .row {
-        margin-left:-20px;
-        margin-right:-20px;
+        margin-left: -20px;
+        margin-right: -20px;
     }
 }
 
 div.gist div.gist-file div.gist-data {
-    background-color:white;
+    background-color: white;
 }
 
 iframe {
@@ -64,6 +65,24 @@ iframe {
 }
 
 pre {
-    background-color:white;
-    font-size:18px;
+    background-color: white;
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.carousel-control .glyphicon-chevron-right {
+    right: 10%;
+}
+
+.carousel-control .glyphicon-chevron-left {
+    left: 10%;
+}
+
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
+
+.carousel {
+    background-color: black;
 }
