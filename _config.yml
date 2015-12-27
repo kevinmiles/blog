@@ -1,5 +1,14 @@
-name: David Yamnitsky's Blog
+title: David Yamnitsky
+github_username: nitsky
+twitter_username: davidyamnitsky
+markdown: kramdown
+kramdown:
+  input: GFM
 paginate: 5
 permalink: pretty
 excerpt_separator: <!-- more -->
-markdown: redcarpet
+gems:
+  - jekyll-paginate
+  - jekyll-gist
+  - jekyll-feed
+

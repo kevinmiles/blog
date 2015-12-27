@@ -1,4 +1,4 @@
 nitsky.github.io
 ================
 
-Personal Website
+David Yamnitsky's Blog
