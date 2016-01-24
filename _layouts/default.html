@@ -30,6 +30,13 @@ MathJax.Hub.Config({
 <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML-full"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>
 <script src="{{ site.url }}/scripts.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function() {
+  $("table").addClass("table table-striped table-bordered table-nonfluid");
+  anchors.options.placement = 'left';
+  anchors.add('.body h1, .body h2, .body h3, .body h4, .body h5, .body h6');
+});
+</script>
 
 </head>
 

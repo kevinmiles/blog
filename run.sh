@@ -1,1 +1,1 @@
-jekyll serve --port 8080 --watch --incremental --drafts
+jekyll serve --port 8080 --watch --drafts

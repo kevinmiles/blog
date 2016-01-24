@@ -63,3 +63,11 @@ h6 a:hover
   float: right;
 }
 
+.table-nonfluid {
+  width: auto !important;
+}
+
+table {
+  margin-bottom: 10px;
+}
+
