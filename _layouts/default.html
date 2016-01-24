@@ -42,14 +42,18 @@ $(function() {
 <body>
 
 <div class="container">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
 
-<div class="nav">
-  <a class="left" href="{{ site.url }}/">{{ site.title }}</a>
-  <a class="right" href="{{ site.url }}/about">About</a>
-</div>
+      <div class="nav">
+        <a class="left" href="{{ site.url }}/">{{ site.title }}</a>
+        <a class="right" href="{{ site.url }}/about">About</a>
+      </div>
 
-{{ content }}
+      {{ content }}
 
+    </div>
+  </div>
 </div>
 
 </body>

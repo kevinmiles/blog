@@ -1,11 +1,8 @@
 ---
 layout: page
+title: About
 permalink: /about
 ---
-
-# About
-
-I'm a software engineer.
 
 [GitHub](https://github.com/nitsky)
 [Twitter](https://twitter.com/davidyamnitsky)

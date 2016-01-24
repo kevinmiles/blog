@@ -1,4 +1,5 @@
 title: David Yamnitsky
+disqus_shortname: davidyamnitsky
 gems:
   - jekyll-paginate
   - jekyll-feed
