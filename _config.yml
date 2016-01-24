@@ -1,14 +1,27 @@
 title: David Yamnitsky
-github_username: nitsky
-twitter_username: davidyamnitsky
-markdown: kramdown
-kramdown:
-  input: GFM
-paginate: 5
-permalink: pretty
-excerpt_separator: <!-- more -->
 gems:
   - jekyll-paginate
-  - jekyll-gist
   - jekyll-feed
+  - jemoji
+paginate: 10
+permalink: pretty
+excerpt_separator: <!-- excerpt -->
+markdown: redcarpet
+redcarpet:
+  extensions: [
+    "no_intra_emphasis",
+    "tables",
+    "fenced_code_blocks",
+    "autolink",
+    "strikethrough",
+    "lax_spacing",
+    "space_after_headers",
+    "underline",
+    "highlight",
+    "footnotes",
+    "with_toc_data",
+    "hard_wrap",
+    "no_styles",
+    "safe_links_only",
+]
 

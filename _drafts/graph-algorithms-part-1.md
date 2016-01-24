@@ -9,7 +9,7 @@ tags:
 
 This post is the first in a series covering a simple, code-first explanation of graph algorithms that I wish were available when I was taking MIT's introductory algorithms class, 6.006. The class is taught from more of a mathematical and theoretical perspective than I was comfortable with, and I would have benefited from actually seeing the code first, rather than a bunch of symbols, because I realized later that the algorithms are actually much easier to understand than the math made it seem. I'll be using python because it makes everything easy to understand.
 
-<!-- more -->
+<!-- excerpt -->
 
 ### What is a graph?
 
@@ -20,6 +20,23 @@ First, what is a graph? A series of points, called nodes, connected by lines, ca
 The nodes in this graph are the cities, the edges are the train routes, and the edge weights are the distances (in miles) of those routes.
 
 ### Graph Representation
+
+Colons can be used to align columns.
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
+There must be at least 3 dashes separating each header cell.
+The outer pipes (|) are optional, and you don't need to make the
+raw Markdown line up prettily. You can also use inline Markdown.
+
+Markdown | Less | Pretty
+--- | --- | ---
+*Still* | `renders` | **nicely**
+1 | 2 | 3
 
 The easiest way to represent a graph in python is with a dictionary. The keys are node names, and the values are a dictionary of edges, where the keys are the destination nodes and the values are the edge weights. Here is the graph from above in python:
 

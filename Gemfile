@@ -1,8 +1,13 @@
 source 'https://rubygems.org'
-gem 'kramdown'
+
+gem 'redcarpet'
 gem 'rouge'
 gem 'jekyll-paginate'
-gem 'jekyll-gist'
-gem 'jekyll-watch'
-gem 'jekyll-compose'
 gem 'jekyll-feed'
+gem 'jekyll-watch'
+gem 'jemoji'
+
+group :jekyll_plugins do
+    gem 'jekyll-compose'
+end
+

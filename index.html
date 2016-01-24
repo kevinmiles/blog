@@ -1,46 +1,26 @@
 ---
 layout: default
-title: David Yamnitsky
 ---
 
 {% for post in paginator.posts %}
 
-<div class="row">
-    <div class="col-md-12">
-
-	<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-
-	<h4>{{ post.date | date: "%B %d, %Y" }}</h4>
-
-	{% if post.content contains "<!-- more -->" %}
-		{{ post.excerpt }}
-		<h4><a href="{{ post.url }}">Read more...</a></h4>
-	{% else %}
-		{{ post.content }}
-	{% endif %}
-
-	<hr>
-
-    </div>
-</div>
+<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+<p>{{ post.date | date: "%B %d, %Y" }}</p>
+<p>
+  {{ post.excerpt }}
+</p>
+<h5><a href="{{ post.url }}">Read More</a></h5>
 
 {% endfor %}
 
-<div class="row">
-	<div class="col-md-12">
-
-	<ul class="pager">
-		{% if paginator.previous_page %}
-			{% if paginator.previous_page == 1 %}
-				<li class="previous"><a href="/">&larr; Back</a></li>
-			{% else %}
-				<li class="previous"><a href="/page{{ paginator.previous_page }}">&larr; Back</a></li>
-			{% endif %}
-		{% endif %}
-		{% if paginator.next_page %}
-			<li class="next"><a href="/page{{ paginator.next_page }}">Next &rarr;</a></li>
-		{% endif %}
-	</ul>
-
-	</div>
+<div class="nav">
+  <a href="{{ paginator.previous_page_path }}"
+    class="left {% if paginator.previous_page %}enabled{% else %}disabled{% endif %}">
+    Newer
+  </a>
+  <a href="{{ paginator.next_page_path }}"
+    class="right {% if paginator.next_page %}enabled{% else %}disabled{% endif %}">
+    Older
+  </a>
 </div>
+
