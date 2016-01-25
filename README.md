@@ -1,4 +1,5 @@
-nitsky.github.io
+blog
 ================
 
-David Yamnitsky's Blog
+To get started, run `serve.sh` and visit the page at `http://localhost:8080/`
+
