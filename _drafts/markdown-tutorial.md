@@ -233,15 +233,15 @@ Inline LaTeX $$x_1+5$$.
 
 ```
 Block LaTeX.
-$$$
+$$
 \int_0^\infty e^{-x^2} dx=\frac{\sqrt{\pi}}{2}\tag{1}
-$$$
+$$
 ```
 
 Block LaTeX.
-$$$
+$$
 \int_0^\infty e^{-x^2} dx=\frac{\sqrt{\pi}}{2}\tag{1}
-$$$
+$$
 
 ```
 Inline ASCIIMath ${x_1+5}$.

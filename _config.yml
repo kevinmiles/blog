@@ -7,22 +7,7 @@ gems:
 paginate: 10
 permalink: pretty
 excerpt_separator: <!-- excerpt -->
-markdown: redcarpet
-redcarpet:
-  extensions: [
-    "no_intra_emphasis",
-    "tables",
-    "fenced_code_blocks",
-    "autolink",
-    "strikethrough",
-    "lax_spacing",
-    "space_after_headers",
-    "underline",
-    "highlight",
-    "footnotes",
-    "with_toc_data",
-    "hard_wrap",
-    "no_styles",
-    "safe_links_only",
-]
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 
