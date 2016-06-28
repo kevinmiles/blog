@@ -6,6 +6,7 @@ gem 'jekyll-paginate'
 gem 'jekyll-feed'
 gem 'jekyll-watch'
 gem 'jemoji'
+gem 'jekyll-seo-tag'
 
 group :jekyll_plugins do
     gem 'jekyll-compose'
