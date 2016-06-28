@@ -1,10 +1,5 @@
 /* styles.css */
 
-p {
-  font-size: 16px;
-  line-height: 1.6;
-}
-
 a:hover {
   text-decoration: none;
 }
@@ -31,12 +26,11 @@ h6 a:hover
 }
 
 .nav {
-  padding: 15px 0px;
+  padding: 1rem 0rem;
 }
 
 .nav a {
   color: #333;
-  font-size: 18px;
 }
 
 .nav a:hover {
@@ -61,6 +55,11 @@ h6 a:hover
 }
 
 table {
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
+}
+
+pre {
+  background-color: #F7F7F7;
+  padding: 1rem 1rem;
 }
 
