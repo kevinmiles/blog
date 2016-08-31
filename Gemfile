@@ -2,7 +2,6 @@ source 'https://rubygems.org'
 
 gem 'redcarpet'
 gem 'rouge'
-gem 'jekyll-paginate'
 gem 'jekyll-feed'
 gem 'jekyll-watch'
 gem 'jemoji'
