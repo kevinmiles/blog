@@ -32,11 +32,12 @@ GEM
       jekyll (~> 3.1)
       sinatra (~> 1.4)
       sinatra-contrib (~> 1.4)
-    jekyll-feed (0.6.0)
     jekyll-sass-converter (1.4.0)
       sass (~> 3.4)
     jekyll-seo-tag (2.0.0)
       jekyll (~> 3.1)
+    jekyll-sitemap (0.11.0)
+      addressable (~> 2.4.0)
     jekyll-watch (1.5.0)
       listen (~> 3.0, < 3.1)
     jemoji (0.7.0)
@@ -68,7 +69,6 @@ GEM
     rb-fsevent (0.9.7)
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
-    redcarpet (3.3.4)
     rouge (1.11.1)
     safe_yaml (1.0.4)
     sass (3.4.22)
@@ -92,13 +92,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  jekyll
   jekyll-admin
-  jekyll-feed
   jekyll-seo-tag
-  jekyll-watch
+  jekyll-sitemap
   jemoji
-  redcarpet
-  rouge
 
 BUNDLED WITH
-   1.12.5
+   1.13.1

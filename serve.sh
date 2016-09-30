@@ -1,1 +1,1 @@
-bundle exec jekyll serve --port 8080 --watch --drafts
+bundle exec jekyll serve --destination build --host 0.0.0.0 --port 8080 --watch --incremental --drafts
