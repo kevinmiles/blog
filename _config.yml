@@ -1,17 +1,7 @@
 title: David Yamnitsky
-description: David Yamnitsky's Blog
-author:
-    twitter: davidyamnitsky
-twitter:
-    username: davidyamnitsky
 disqus_shortname: davidyamnitsky
-gems:
-  - jekyll-feed
-  - jemoji
-  - jekyll-seo-tag
 permalink: pretty
 excerpt_separator: <!-- excerpt -->
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
-
+collections:
+  downloads:
+    output: true
