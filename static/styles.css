@@ -17,6 +17,10 @@ a:hover {
   color: #333;
 }
 
+.table {
+  width: auto;
+}
+
 pre {
   background-color: #F7F7F7;
   padding: 1rem 1rem;

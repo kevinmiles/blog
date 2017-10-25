@@ -138,16 +138,16 @@ Some filler text to show that the reference links can follow later.
 ## Images
 
 ```
-![alt text](http://placehold.it/250x100)
+![alt text](https://placehold.it/250x100)
 
 ![alt text][logo]
-[logo]: http://placehold.it/250x100
+[logo]: https://placehold.it/250x100
 ```
 
-![alt text](http://placehold.it/250x100)
+![alt text](https://placehold.it/250x100)
 
 ![alt text][logo]
-[logo]: http://placehold.it/250x100
+[logo]: https://placehold.it/250x100
 
 ## Code
 
