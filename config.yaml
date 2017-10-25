@@ -1,0 +1,19 @@
+---
+title: David Yamnitsky
+params:
+  disqus_shortname: davidyamnitsky
+baseURL: https://www.davidyamnitsky.com/
+permalinks:
+  blog: /:year/:month/:day/:slug/
+metaDataFormat: yaml
+enableRobotsTXT: true
+pygmentsCodeFences: true
+pygmentsCodefencesGuessSyntax: true
+pygmentsUseClasses: true
+pygmentsOptions:
+  - linenos
+enableEmoji: true
+blackfriday:
+  extensions:
+  - hardLineBreak
+---

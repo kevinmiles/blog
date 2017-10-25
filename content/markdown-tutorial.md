@@ -1,10 +1,7 @@
 ---
-layout: post
 title: "Markdown Tutorial"
 slug: markdown-tutorial
 date: 2016-01-23
-category: blog
-tags:
 ---
 
 This tutorial is an overview of markdown editing for this site.
@@ -154,11 +151,11 @@ Some filler text to show that the reference links can follow later.
 
 ## Code
 
+```
 Inline `code` has `back-ticks around` it.
+```
 
-```
 Inline `code` has `back-ticks around` it.
-```
 
 Blocks of code are fenced by lines with three back-ticks <code>```</code> and optionally specify the language.
 
@@ -226,22 +223,20 @@ Surround emoji codes with with colons. Ignore the space after the leading colon 
 ## Math
 
 ```
-Inline LaTeX $$x_1+5$$.
+Inline LaTeX $(x_1+5)$.
 ```
 
-Inline LaTeX $$x_1+5$$.
+Inline LaTeX $(x_1+5)$.
 
 ```
 Block LaTeX.
-$$
-\int_0^\infty e^{-x^2} dx=\frac{\sqrt{\pi}}{2}\tag{1}
-$$
+
+$[\int_0^\infty e^{-x^2} dx=\frac{\sqrt{\pi}}{2}\tag{1}]$
 ```
 
 Block LaTeX.
-$$
-\int_0^\infty e^{-x^2} dx=\frac{\sqrt{\pi}}{2}\tag{1}
-$$
+
+$[\int_0^\infty e^{-x^2} dx=\frac{\sqrt{\pi}}{2}\tag{1}]$
 
 ```
 Inline ASCIIMath ${x_1+5}$.
@@ -258,4 +253,3 @@ ${x = (-b +- sqrt(b^2-4ac))/(2a)}$
 Block ASCIIMath.
 
 ${x = (-b +- sqrt(b^2-4ac))/(2a)}$
-
