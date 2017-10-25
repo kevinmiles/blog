@@ -4,13 +4,7 @@ a:hover {
   text-decoration: none;
 }
 
-h1 a,
-h2 a,
-h3 a,
-h4 a,
-h5 a,
-h6 a
-{
+.anchorjs-link, .anchorjs-link:hover {
   color: #333;
 }
 
@@ -23,29 +17,7 @@ h6 a
   color: #333;
 }
 
-.nav .disabled {
-  color: gray;
-  pointer-events: none;
-  cursor: default;
-}
-
-.nav .left {
-}
-
-.nav .right {
-  float: right;
-}
-
-.table-nonfluid {
-  width: auto !important;
-}
-
-table {
-  margin-bottom: 1rem;
-}
-
 pre {
   background-color: #F7F7F7;
   padding: 1rem 1rem;
 }
-
