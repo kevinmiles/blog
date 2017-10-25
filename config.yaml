@@ -4,7 +4,7 @@ params:
   disqus_shortname: davidyamnitsky
 baseURL: https://www.davidyamnitsky.com/
 permalinks:
-  blog: /blog/:year/:month/:day/:slug/
+  blog: /:section/:year/:month/:day/:slug/
 metaDataFormat: yaml
 enableRobotsTXT: true
 pygmentsCodeFences: true
