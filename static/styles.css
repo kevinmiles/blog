@@ -1,15 +1,52 @@
 /* styles.css */
 
-a:hover {
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 1rem 0;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+.container {
+  padding: 0 1rem;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+a {
   text-decoration: none;
 }
 
-.anchorjs-link, .anchorjs-link:hover {
-  color: #333;
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+blockquote {
+  margin-left: 0;
 }
 
 .nav {
-  padding: 1rem 0rem;
+  margin: 1rem 0rem;
 }
 
 .nav a {
@@ -17,11 +54,38 @@ a:hover {
   color: #333;
 }
 
-.table {
-  width: auto;
+table {
+  border-collapse: collapse;
+  border: 1px solid #eee;
+  margin: 1rem 0;
+}
+
+td,
+th {
+  border: 1px solid #eee;
+  padding: 1rem;
+}
+
+pre,
+code {
+  font-family: Menlo, monospace;
+  background-color: #f7f7f7;
 }
 
 pre {
-  background-color: #F7F7F7;
   padding: 1rem 1rem;
+}
+
+code {
+  padding: 0.25rem 0.5rem;
+}
+
+pre code {
+  display: block;
+  padding: 0;
+}
+
+.anchorjs-link,
+.anchorjs-link:hover {
+  color: #333;
 }

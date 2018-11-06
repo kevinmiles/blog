@@ -9,6 +9,7 @@ This tutorial is an overview of markdown editing for this site.
 <!-- excerpt -->
 
 ## Table of Contents
+
 [Text](#text)
 [Headers](#headers)
 [Emphasis](#emphasis)
@@ -47,25 +48,28 @@ Like this.
 ```
 
 # H1
+
 ## H2
+
 ### H3
+
 #### H4
+
 ##### H5
+
 ###### H6
 
 ## Emphasis
 
 ```
-Italic with *asterisks*.
+Italic with _underlines_.
 Bold with **double asterisks**.
-Underline with _underscores_.
-Strikethrough with ~~tildes~~.
+Strikethrough with ~~double tildes~~.
 ```
 
-Italic with *asterisks*.
+Italic with _underlines_.
 Bold with **double asterisks**.
-Underline with _underscores_.
-Strikethrough with ~~tildes~~.
+Strikethrough with ~~double tildes~~.
 
 ## Lists
 
@@ -96,8 +100,8 @@ Indent sublists by at least one space.
    - unordered sublist item 1
    - unordered sublist item 2
 
-* Unordered List Item 1
-* Unordered List Item 1
+- Unordered List Item 1
+- Unordered List Item 1
 
 ## Links
 
@@ -123,7 +127,7 @@ Here's some tex with a [link](https://www.google.com).
 
 Here's some tex with a [link](https://www.google.com "Google's Homepage") with a title.
 
-Here's a [reference link][ArbiTrarY CasE-InsenSitive ReferencE TexT]
+Here's a [reference link][arbitrary case-insensitive reference text]
 
 Here's one with just the [link reference text itself].
 
@@ -188,17 +192,17 @@ Make your table pretty if you want with whitespace and colons to align columns.
 
 Make tables by using pipes to separate columns.
 
-Tables | Are | Cool
---- | --- | ---
-1 | 2 | 3
+| Tables | Are | Cool |
+| ------ | --- | ---- |
+| 1      | 2   | 3    |
 
 Make your table pretty with whitespace and colons to align columns.
 
-| Tables        | Are           | Cool  |
-| :------------ |:-------------:| -----:|
-| col 1 left    | 1             | A     |
-| col 2 center  | 2             | B     |
-| col 3 right   | 3             | C     |
+| Tables       | Are | Cool |
+| :----------- | :-: | ---: |
+| col 1 left   |  1  |    A |
+| col 2 center |  2  |    B |
+| col 3 right  |  3  |    C |
 
 ## Blockquotes
 
@@ -212,7 +216,7 @@ Make your table pretty with whitespace and colons to align columns.
 
 ## Emoji
 
-Surround emoji codes with with colons. Ignore the space after the leading colon and before the trailing one.
+Surround emoji codes with with colons. Omit the space after the leading colon and before the trailing one.
 
 ```
 : smile :

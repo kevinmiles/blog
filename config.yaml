@@ -1,4 +1,3 @@
----
 title: David Yamnitsky
 uglyURLs: true
 params:
@@ -16,5 +15,5 @@ pygmentsOptions:
 enableEmoji: true
 blackfriday:
   extensions:
-  - hardLineBreak
+    - hardLineBreak
 ---
